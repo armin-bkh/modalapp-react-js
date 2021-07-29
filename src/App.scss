@@ -23,6 +23,10 @@
             width: 40%;
             background: #ffffff;
 
+            @media only screen and (max-width: 966px) {
+                width: 20rem;
+            }
+
 
             .header {
                 display: flex;
@@ -33,6 +37,10 @@
 
                 .title {
                     font-size: 3rem;
+
+                    @media only screen and (max-width: 966px){
+                        font-size: 1.5rem;
+                    }
                 }
 
                 .btn-close {
@@ -49,13 +57,16 @@
                 padding: 2rem 0 0 0;
 
                 .lbl,
-                .lbl {
+                .inp {
                     display: block;
                 }
 
                 .lbl {
                     font-size: 1.2rem;
                     font-family: sans-serif;
+                    @media only screen and (max-width: 966px){
+                    font-size: .9rem;
+                    }
                 }
 
                 .inp {
