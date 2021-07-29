@@ -1,0 +1,106 @@
+#root{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+#modal {
+    .modalSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999999;
+        background: rgba(rgb(145, 144, 144), .6);
+
+        &-form {
+            padding: 2rem;
+            border-radius: 2rem;
+            width: 40%;
+            background: #ffffff;
+
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+
+
+                .title {
+                    font-size: 3rem;
+                }
+
+                .btn-close {
+                    background: #ee82ee;
+                    color: #fff;
+                    padding: 5px 15px;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                }
+            }
+
+            .inpContainer {
+                padding: 2rem 0 0 0;
+
+                .lbl,
+                .lbl {
+                    display: block;
+                }
+
+                .lbl {
+                    font-size: 1.2rem;
+                    font-family: sans-serif;
+                }
+
+                .inp {
+                    margin: 0 0 1rem;
+                    border-radius: 5px;
+                    padding: 5px 15px;
+                    border: none;
+                    outline: none;
+                    border-bottom: 2px #ee82ee solid;
+                    width: 100%;
+
+                    &:focus{
+                        box-shadow: 0 0 15px #ee82ee;
+                    }
+                }
+
+                .footer{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 1rem;
+
+                    .btn-sumbit {
+                        border: none;
+                        outline: none;
+                        background: #ee82ee;
+                        color: #fff;
+                        padding: 5px 15px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn-open {
+    padding: 5px 15px;
+    border: 2px solid #ee82ee;
+    outline: none;
+    transition: all .4s ease;
+    border-radius: 5px;
+
+
+    &:hover {
+        background: #ee82ee;
+    }
+}
