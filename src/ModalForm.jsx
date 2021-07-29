@@ -17,7 +17,7 @@ class ModalForm extends Component {
           </header>
           <article className="inpContainer">
             <ModalInput lbl="Username:" type="text" />
-            <ModalInput lbl="Username:" type="password" />
+            <ModalInput lbl="Password:" type="password" />
             <footer className="footer">
             <button type="submit" className="btn-sumbit">Submit</button>
             </footer>
